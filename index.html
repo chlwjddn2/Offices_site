@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/deba624ec9.js" crossorigin="anonymous"></script>
+  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>인사혁신처</title>
+</head>
+<body>
+  <div id="skipNav">
+    <a href="#header">메뉴 바로가기</a>
+    <a href="#main">본문 바로가기</a>
+    <a href="#footer">하단 바로가기</a>
+  </div>
+  <div class="wrap">
+    <header id="header">
+      <div class="header_top">
+        <div class="header_top_inner inner clearfix">
+          <div class="logo">
+            <a href="index.html"></a>
+          </div>
+          <div class="util">
+            <ul>
+              <li>
+                <a href="#">
+                  어린이∙청소년
+                </a> 
+              </li>
+              <li><a href="#">ENGLISH</a></li>
+              <li><a href="#">누리집 안내지도</a></li>
+            </ul>
+          </div>
+          <div class="search_bar">
+            <form>
+              <input type="text" name="search_bar" id="main_search">
+            </form>
+            <button class="search_btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="open_menu">
+            <button class="open_menu_btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <div class="response_menu">
+            <div class="res_menu_top">
+              <div class="res_search_bar">
+                <form>
+                  <input type="text" name="res_search" id="res_search_bar" placeholder="검색어를 입력하세요">
+                </form>
+                <button class="btn_search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div class="res_util">
+                <ul>
+                  <li>
+                    <a href="#">
+                      어린이∙청소년
+                    </a> 
+                  </li>
+                  <li><a href="#">ENGLISH</a></li>
+                  <li><a href="#">누리집 안내지도</a></li>
+                </ul>
+              </div>
+              <div class="close_btn">
+              </div>
+            </div>
+            <div class="res_menu_lower">
+              <ul>
+                <li><a href="#">새소식</a></li>
+                <li><a href="#">국정과제</a></li>
+                <li><a href="#">공무원 인사제도</a></li>
+                <li><a href="#">법령 통계정보</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">참여민원</a></li>
+                <li><a href="#">기관소개</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_lower">
+        <div class="header_lower_inner inner">
+          <nav class="nav">
+            <ul>
+              <li>
+                <a href="#">새소식</a>
+                <ul class="depth_2">
+                  <li class="more">
+                    <a href="#">공지사항</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">인사혁신처 공고</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">언론보도자료</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공지사항</a></li>
+                      <li><a href="#">반박자료</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">주요정책홍보</a>
+                  </li>
+                  <li>
+                    <a href="#">인사소식지</a>
+                  </li>
+                  <li>
+                    <a href="#">간행물</a>
+                  </li>
+                  <li>
+                    <a href="#">인사이동</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">국정과제</a>
+                <ul class="depth_2">
+                  <li>
+                    <a href="#">비전 및 국정목표</a>
+                  </li>
+                  <li>
+                    <a href="#">인사혁신처 국정과제</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">공무원 인사제도</a>
+                <ul class="depth_2">
+                  <li class="more">
+                    <a href="#">승진∙보직관리</a>
+                    <ul class="depth_3">
+                      <li><a href="#">임용 및 임용권자</a></li>
+                      <li><a href="#">인력관리계획</a></li>
+                      <li><a href="#">승진제도</a></li>
+                      <li><a href="#">휴직제도</a></li>
+                      <li><a href="#">파견제도</a></li>
+                      <li><a href="#">인사교류</a></li>
+                      <li><a href="#">시간선택제 공무원</a></li>
+                      <li><a href="#">고위공무원단 제도</a></li>
+                      <li><a href="#">개방형직위 제도</a></li>
+                      <li><a href="#">역량평가제도</a></li>
+                      <li><a href="#">승진∙보직관리 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">채용제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공무원 종류</a></li>
+                      <li><a href="#">공무원채용</a></li>
+                      <li><a href="#">균형인사제도</a></li>
+                      <li><a href="#">공공채용정보</a></li>
+                      <li><a href="#">채용제도 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">성과∙보수제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">보수체계</a></li>
+                      <li><a href="#">봉급제도</a></li>
+                      <li><a href="#">공무원봉급표</a></li>
+                      <li><a href="#">여비제도</a></li>
+                      <li><a href="#">성과평가∙보수제도</a></li>
+                      <li><a href="#">성과∙보수제도 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">연금∙복지제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">연금제도</a></li>
+                      <li><a href="#">후생복지제도</a></li>
+                      <li><a href="#">공무원예술대전</a></li>
+                      <li><a href="#">퇴직관리</a></li>
+                      <li><a href="#">연금∙복지제도 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">재해보상제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공무원 재해보상제도</a></li>
+                      <li><a href="#">공무원 재해보상 업무 절차</a></li>
+                      <li><a href="#">공무원 재해보상 급여 종류</a></li>
+                      <li><a href="#">공무원재해보상심의회</a></li>
+                      <li><a href="#">공무원재해보상연금위원회</a></li>
+                      <li><a href="#">공상공무원전문재활치료</a></li>
+                      <li><a href="#">공무원 마음건강센터</a></li>
+                      <li><a href="#">재해보상판례</a></li>
+                      <li><a href="#">재해보상제도 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">인재개발제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">교육훈련일반</a></li>
+                      <li><a href="#">국내교육훈련</a></li>
+                      <li><a href="#">국외교육훈련</a></li>
+                      <li><a href="#">디지털 인재개발</a></li>
+                      <li><a href="#">인재개발제도 게시판</a></li>
+                      <li><a href="#">나라배움터</a></li>
+                      <li><a href="#">인재개발정보센터</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">복무제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공무원휴가제도</a></li>
+                      <li><a href="#">유연근무제도</a></li>
+                      <li><a href="#">공휴일제도</a></li>
+                      <li><a href="#">당직 및 비상근무 제도</a></li>
+                      <li><a href="#">국내출장</a></li>
+                      <li><a href="#">공무국외출장</a></li>
+                      <li><a href="#">징계제도</a></li>
+                      <li><a href="#">적극행정 징계면제제도</a></li>
+                      <li><a href="#">공무원헌장</a></li>
+                      <li><a href="#">복무제도 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">윤리제도</a>
+                    <ul class="depth_3">
+                      <li><a href="#">재산등록∙공개∙심사제도</a></li>
+                      <li><a href="#">고지거부제도</a></li>
+                      <li><a href="#">주식백지신탁심사제도</a></li>
+                      <li><a href="#">선물신고제도</a></li>
+                      <li><a href="#">퇴직공직자 취업제한제도</a></li>
+                      <li><a href="#">퇴직공직자 행위제한제도</a></li>
+                      <li><a href="#">공직유관단체</a></li>
+                      <li><a href="#">윤리제도 기세판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">노사협력</a>
+                    <ul class="depth_3">
+                      <li><a href="#">공무원 노사관계 개요</a></li>
+                      <li><a href="#">노사상생 협력사업</a></li>
+                      <li><a href="#">공무원 노조와 단체교섭</a></li>
+                      <li><a href="#">노사상생 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">인재정보</a>
+                    <ul class="depth_3">
+                      <li><a href="#">인재정보 활용 개요</a></li>
+                      <li><a href="#">국가인재데이터베이스</a></li>
+                      <li><a href="#">국가인재DB추천제</a></li>
+                      <li><a href="#">정부헤드헌팅</a></li>
+                      <li><a href="#">인재정보게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">공직박람회</a>
+                    <ul class="depth_3">
+                      <li><a href="#">연도별 공직박람회</a></li>
+                      <li><a href="#">기관별채용제도</a></li>
+                      <li><a href="#">생애/특성별 채용제도</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">전자인사관리시스템</a>
+                    <ul class="depth_3">
+                      <li><a href="#">전자인사관리시스템</a></li>
+                      <li><a href="#">주요서비스</a></li>
+                      <li><a href="#">서비스구성</a></li>
+                      <li><a href="#">달라지는 정부인사</a></li>
+                      <li><a href="#">전자인사관리 게시판</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">더 적극행정</a>
+                    <ul class="depth_3">
+                      <li><a href="#">제도소개</a></li>
+                      <li><a href="#">실행계획</a></li>
+                      <li><a href="#">적극행정위원회</a></li>
+                      <li><a href="#">자료실</a></li>
+                      <li><a href="#">명예의 전당</a></li>
+                      <li><a href="#">국민참여</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">자주하는질문</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">법령∙통계정보</a>
+                <ul class="depth_2">
+                  <li class="more">
+                    <a href="#">법령정보</a>
+                    <ul class="depth_3">
+                      <li><a href="#">법률</a></li>
+                      <li><a href="#">대통령령</a></li>
+                      <li><a href="#">총리령</a></li>
+                      <li><a href="#">훈령/예규/고시</a></li>
+                      <li><a href="#">입법/행정 예규</a></li>
+                      <li><a href="#">법령종합검색</a></li>
+                      <li><a href="#">법령자료실</a></li>
+                      <li><a href="#">정책연구 보고서</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">통계정보</a>
+                    <ul class="depth_3">
+                      <li><a href="#">인사통계</a></li>
+                      <li><a href="#">공무원총조사</a></li>
+                      <li><a href="#">e-나라지표</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">정보공개</a>
+                <ul class="depth_2">
+                  <li>
+                    <a href="#">사전정보공표</a>
+                  </li>
+                  <li>
+                    <a href="#">정보공개안내</a>
+                  </li>
+                  <li>
+                    <a href="#">정보공개목록 및 청구</a>
+                  </li>
+                  <li>
+                    <a href="#">비공개 대상정보 세부기준</a>
+                  </li>
+                  <li>
+                    <a href="#">공공데이터 개방</a>
+                  </li>
+                  <li class="more">
+                    <a href="#">정책실명제</a>
+                    <ul class="depth_3">
+                      <li><a href="#">정책실명제 안내</a></li>
+                      <li><a href="#">국민신청실명제</a></li>
+                      <li><a href="#">정책실명제공개과제</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">정부포상공개검증</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">참여민원</a>
+                <ul class="depth_2">
+                  <li class="more">
+                    <a href="#">온라인 민원</a>
+                    <ul class="depth_3">
+                      <li><a href="#">유사민원 검색</a></li>
+                      <li><a href="#">온라인 민원 FAQ</a></li>
+                      <li><a href="#">온라인 민원신청</a></li>
+                      <li><a href="#">나의 민원 보기</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">정책참여</a>
+                    <ul class="depth_3">
+                      <li><a href="#">정책토론</a></li>
+                      <li><a href="#">전자공청회</a></li>
+                      <li><a href="#">설문조사</a></li>
+                      <li><a href="#">국민생각함</a></li>
+                      <li><a href="#">국민참여정책단</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">국민제안</a>
+                    <ul class="depth_3">
+                      <li><a href="#">제안제도</a></li>
+                      <li><a href="#">국민제안</a></li>
+                      <li><a href="#">공모제안</a></li>
+                      <li><a href="#">나의제안보기</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">신고센터</a>
+                    <ul class="depth_3">
+                      <li><a href="#">인사신문고</a></li>
+                      <li><a href="#">공익신고</a></li>
+                      <li><a href="#">예산낭비 신고센터</a></li>
+                      <li><a href="#">청탁금지법 신고</a></li>
+                      <li><a href="#">안전신문고</a></li>
+                      <li><a href="#">취업∙행위제한 신고센터</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <a href="#">규제혁신</a>
+                    <ul class="depth_3">
+                      <li><a href="#">규제개혁신문고</a></li>
+                      <li><a href="#">규제정보포털</a></li>
+                      <li><a href="#">규제입증요청</a></li>
+                      <li><a href="#">정부입법 규제법안</a></li>
+                      <li><a href="#">부처별 보도자료</a></li>
+                      <li><a href="#">규제법령 정보</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">기관소개</a>
+                <ul class="depth_2">
+                  <li class="more">
+                    <a href="#">인사혁신처 소개</a>
+                    <ul class="depth_3">
+                      <li><a href="#">연혁</a></li>
+                      <li><a href="#">예산현황</a></li>
+                      <li><a href="#">기관상징 소개</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">조직과 기능</a>
+                  </li>
+                  <li>
+                    <a href="#">열린 처장실</a>
+                  </li>
+                  <li>
+                    <a href="#">찾아오시는길</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="section main_banner">
+        <h2>main banner</h2>
+        <div class="swiper mySwiper main_swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide main_bg1">
+              <a href="#">
+                <img src="images/banner_1.jpg" alt="2023년 인재개발플랫폼 정식오픈">
+              </a>
+            </div>
+            <div class="swiper-slide main_bg2">
+              <a href="#">
+                <img src="images/banner_2.png" alt="2023년 최저임금 시급 9,620원 월 환산액 2,010,580원(주 40시간 기준, 유급주휴 8시간 포함) 문의사항은 국번없이 1350 최저임금위원회">
+              </a>
+            </div>
+            <div class="swiper-slide main_bg3">
+              <a href="#">
+                <img src="images/banner_3.png" alt="어떡하죠, 채용 공고에 아무도 지원을 안해요 ㅠㅠ, 오히려 좋아, 우리 상시공고로 채용해볼까요?, 상시공고 더 알아보기 , 인사혁신처">
+              </a>
+            </div>
+            <div class="swiper-slide main_bg4">
+              <a href="#">
+                <img src="images/banner_4.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper_button_wrap">
+          <div class="swiper-button-next swiper_btn"></div>
+          <div class="btn_pause swiper_btn">
+          </div>
+          <div class="swiper-button-prev swiper_btn"></div>
+        </div>
+      </section>
+      <section class="shortcut">
+        <div class="shortcut_inner inner">
+          <h2>
+            <span>주요서비스</span>
+            바로가기
+          </h2>
+          <ul>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q1.png" alt="">
+                </div>
+                채용제도
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q2.png" alt="">
+                </div>
+                인재개발
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q3.png" alt="">
+                </div>
+                승진∙보직관리
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q4.png" alt="">
+                </div>
+                복무제도
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q5.png" alt="">
+                </div>
+                성과∙보수
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q6.png" alt="">
+                </div>
+                윤리제도
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q7.png" alt="">
+                </div>
+                연금∙복지
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="shortcut_img">
+                  <img src="images/ico_q8.png" alt="">
+                </div>
+                재해보상
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="news">
+        <h2>사진뉴스</h2>
+        <div class="news_inner inner clearfix">
+
+          <div class="photo_news news_1">
+            <a href="#">
+              <div class="photo_news_img">
+                <img src="images/photo_news_1.jpg" alt="">
+              </div>
+              <div class="photo_news_text">
+                <p>인사혁신처 정책워크숍</p>
+                <p> 김승호 인사혁신처장이 설 명절을 앞둔 1월 18일 세종시 조치원읍 세종전통시장에서 중증장애인 거주시설에
+
+                  전달할 물품들을 구입하고 있다.</p>
+              </div>
+            </a>
+          </div>
+          <div class="photo_news news_3">
+            <a href="#">
+              <div class="photo_news_img">
+                <img src="images/photo_news_3.jpg" alt="">
+              </div>
+              <div class="photo_news_text">
+                <p>2023년 인사혁신처 시무식</p>
+                <p>김승호 인사혁신처장이 1월2일 세종시 인사처에서 열린 시무식에서 신년사를 하고 있다.</p>
+              </div>
+            </a>
+          </div>
+          <div class="photo_news news_2">
+            <a href="#">
+              <div class="photo_news_img">
+                <img src="images/photo_news_2.jpg" alt="">
+              </div>
+              <div class="photo_news_text">
+                <p>세종전통시장 및 중증장애인 거주시설 방문</p>
+                <p>김승호 인사혁신처장이 설 명절을 앞둔 1월 18일 세종시 조치원읍 세종전통시장에서 중증장애인 거주시설에
+
+                  전달할 물품들을 구입하고 있다.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="notice">
+        <div class="notice_inner inner clearfix">
+          <h2>인사혁신처 소식</h2>
+          <div class="announcement">
+            <h3>공지사항</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  2023년 과장급 맞춤형 온라인 교육서비스 제안서 모집 공고
+                </a>
+                <span>2023-01-12</span>
+              </li>
+              <li>
+                <a href="#">
+                  2023년 인사혁신처 행정주사(일반임기제) 경력경쟁채용시험 공고(온라인 홍보 분야)
+                </a>
+                <span>2023-01-19</span>
+              </li>
+              <li>
+                <a href="#">
+                  2023년 퇴직공무원 사회공헌(Know-how+) 신규사업 공모 기간 연장 안내
+                </a>
+                <span>2023-01-11</span>
+              </li>
+              <li>
+                <a href="#">
+                  제3회 적극행정 유공포상 국민추천 접수
+                </a>
+                <span>2023-01-10</span>
+              </li>
+              <li>
+                <a href="#">
+                  제3회 적극행정 유공포상 국민추천 접수
+                </a>
+                <span>2023-01-10</span>
+              </li>
+              <li>
+                <a href="#">
+                  소청심사위원회 전문임기제 채용 공고문
+                </a>
+                <span>2023-01-03</span>
+              </li>
+            </ul>
+          </div>
+          <div class="open_office">
+            <h3>열린 처장실</h3>
+              <div class="open_office_container">
+                <a href="#">
+                  <div class="open_office_img">
+
+                  </div>
+                  <div class="open_office_text">
+                    <p>전재적소, 공공한 인사로 신뢰받는 공직사회<br>
+                      를 구현하겠습니다.</p>
+                    <p>인사혁신처장 <span>김승호</span></p>
+                  </div>
+                </a>
+              </div>
+            
+          </div>
+          <div class="press">
+            <h3>언론보도</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  (재해보상정책담당관) 공무 수행 중 다친 공무원 보상, 더 쉽고 빠르게
+                </a>
+                <span>2023-01-19</span>
+              </li>
+              <li>
+                <a href="#">
+                  (법무감사혁신담당관) '소방·경찰 등 공무상 재해보상 개선' 공무원 등 적극행정 포상
+                </a>
+                <span>2023-01-19</span>
+              </li>
+              <li>
+                <a href="#">
+                  (행정과) 공무원 고충, 체계적 고충 상담으로 해결한다
+                </a>
+                <span>2023-01-18	</span>
+              </li>
+              <li>
+                <a href="#">
+                  (인재정책과) 가축방역관·공직 의사 인력난, 채용규제 완화로 푼다
+                </a>
+                <span>2023-01-05	</span>
+              </li>
+            </ul>
+          </div>
+          <div class="plan">
+            <h3>시험일정</h3>
+            <ul>
+              <li>
+                <a href="#">
+                  5급(행정, 기술) 공개경쟁채용시험 원서접수
+                </a>
+                <span>01. 28(토) ~ 01. 30(월)</span>
+              </li>
+              <li>
+                <a href="#">
+                  외교관후보자 선발시험 원서접수
+                </a>
+                <span>01. 28(토) ~ 01. 30(월)</span>
+              </li>
+              <li>
+                <a href="#">
+                  9급 공개경쟁채용시험 원서접수
+                </a>
+                <span>02. 09(목) ~ 02. 11(토)</span>
+              </li>
+              <li>
+                <a href="#">
+                  5급(행정,기술) 공개경쟁채용시험 제1차 시험장소 공고
+                </a>
+                <span>02. 24(금)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="with">
+        <div class="with_inner inner clearfix">
+          <h2>함께하는 인사혁신</h2>
+          <ul class="with_item">
+            <li class="with_item_1">
+              <a href="">
+                <img src="images/ban_1.png" alt="">
+              </a>
+            </li>
+            <li class="with_item_3">
+              <a href="">
+                <img src="images/ban_3.png" alt="">
+              </a>
+            </li>
+            <li class="with_item_2">
+              <a href="">
+                <img src="images/ban_2.png" alt="">
+              </a>
+            </li>
+          </ul>
+          <ul class="with_link">
+              <li>
+                <a href="#">
+                  공무원<br>
+                  마음건강센터
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  인사소식지<br>
+                  169호
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  공정채용<br>
+                  안내서
+                </a>
+              </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer_top">
+        <div class="footer_top_inner inner">
+          <div class="footer_top_text">
+            <p>협력기관</p>
+          </div>
+          <div class="footer_swiper_btn">
+            <div class="swiper-button-next footer_swiper_btn_next"></div>
+            <div class="swiper-button-prev footer_swiper_btn_prev"></div>
+          </div>
+          <div class="swiper mySwiper footer_swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_01.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_02.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_03.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_04.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_07.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_08.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_09.png" alt="">
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a href="#">
+                  <img src="images/nuri_10.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer_lower">
+        <div class="footer_lower_inner inner">
+          <ul class="footer_link">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">영상정보처리기기 운영∙관리방침</a></li>
+            <li><a href="#">저작관보호 및 이용정책</a></li>
+            <li><a href="#">문서보기 프로그램</a></li>
+          </ul>
+          <ul class="footer_link">
+            <li><a href="#">찾아오시는 길</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">누리집 개선의견</a></li>
+            <li><a href="#">누리집 안내지도</a></li>
+            <li><a href="#">2022 업무보고</a></li>
+            <li><a href="#">성비위 인사신문고</a></li>
+            <li><a href="#">훈련∙예규∙고시</a></li>
+            <li><a href="#">취업∙행위제한신고</a></li>
+          </ul>
+          <ul>
+            <li>
+              30102 세종특별자치시 한누리대로 499(어진동) 세종포스트빌딩 4층, 6층~12층
+            </li>
+            <li>
+              인사혁신처 민원안내 : 110(정부민원안내콜센터, 월~금 9:00~21:00, 토 9:00~13:00)
+            </li>
+            <li>
+              Copyright© Ministry of Personnel Management. All Rights reserved
+            </li>
+          </ul>
+          <div class="sns">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+              <li><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
